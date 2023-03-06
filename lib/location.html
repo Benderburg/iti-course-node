@@ -1,0 +1,150 @@
+<!-- Объявление формата документа -->
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <!-- Техническая информация о документе -->
+  <head>
+    <!-- Определяем кодировку символов документа -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Задаем заголовок документа -->
+    <title>My very first page</title>
+    <!-- Подключаем внешнюю таблицу стилей -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <!-- Подключение внешних библиотек -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Подключаем сценарии -->
+    <script src="js/script.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  <!-- Основная часть документа -->
+  <body>
+    <!-- заголовок страницы -->
+    <header>
+      <!-- меню страницы -->
+      <nav id="myTopnav">
+        <img src="img/fort-icon.png" alt="Логотип сайта">
+        <ul class="menu">
+          <li>
+            <a href="index.html" class="menu-element" title="На главную">Главная</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="menu-element" data-link="portfolio" title="Фотогалерея">Галерея</a>
+          </li>
+          <li>
+            <a href="#contact" class="menu-element" data-link="contact" title="Контактная информация">Контакты</a>
+          </li>
+          <li>
+            <a href="services.html" class="menu-element" title="Услуги">Услуги</a>
+          </li>
+          <li>
+            <a href="blog.html" class="menu-element" title="Блог сайта">Блог</a>
+          </li>
+          <li>
+            <a href="location.html" class="menu-element" title="Контактны компании">Найти</a>
+          </li>
+        </ul>
+        <div id="hamburger" class="icon">
+          &#9776;
+        </div>
+      </nav>
+    </header>
+    <!-- основной контент -->
+    <main>
+      <section id="top">
+        <img class="top-image top-image-sub" src="img/01.jpg" alt="Обложка страницы">
+      </section>
+      <section id="location">
+        <h1 class="main-title">Наши контакты</h1>
+        <div class="delimiter"></div>
+        <p class="main-title-description">Здесь вы найдёте подробную информацию о нашей компании</p>
+        <div class="contact-container">
+          <div class="row">
+            <p>Город:</p>
+            <p>Тирасполь</p>
+          </div>
+            <div class="row">
+              <p>Улица:</p>
+              <p>Восстания 2А</p>
+            </div>
+          <div class="row">
+            <p>Телефон:</p>
+            <p>0 (533) 7-43-42</p>
+          </div>
+          <div class="row">
+            <p>Электронный ящик:</p>
+            <p>itidir@spsu.ru</p>
+          </div>
+        <div>
+      </section>
+
+      <section id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad21208fd549d2943e8fbe129a2b3a7d14a6690d2bd13c0818db753175b2560d4&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      </section>
+      
+      <section class="contact" id="contact">
+        <h2 class="main-title">Контактная форма</h1>
+        <div class="delimiter"></div>
+        <p class="main-title-description">С радостью ответим на любой вопрос</p>
+        <form id="contactform" method="post" action="contact.php" class="contact-form">
+          <input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+          <input name="email" type="email" class="col" placeholder="E-mail адрес *" required>
+          <input name="theme" type="text" class="col" placeholder="Тема сообщения">
+          <input name="phone" type="tel" class="col" placeholder="Номер телефона">
+          <textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+          <input type="submit" id="submit" class="submit btn" value="Отправить сообщение">
+        </form>
+      </section>
+    </main>
+    <!-- подвал страницы -->
+    <footer>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="index.html" data-link="top" title="На главную">Главная</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="menu-element" data-link="portfolio" title="Фотогалерея">Галерея</a>
+          </li>
+          <li>
+            <a href="#contact" class="menu-element" data-link="contact" title="Контактная информация">Контакты</a>
+          </li>
+          <li>
+            <a href="services.html" class="menu-element" title="Услуги">Услуги</a>
+          </li>
+          <li>
+            <a href="blog.html" class="menu-element" title="Блог сайта">Блог</a>
+          </li>
+          <li>
+            <a href="location.html" class="menu-element" title="Контактны компании">Найти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="brand">
+        <img src="img/fort-icon.png" alt="Логотип сайта">
+        <span>AWESOME</span>
+      </div>
+      <div class="social">
+        <a href="#" title="Facebook" target="_blank">
+          <img class="social-img" src="img/social/001-facebook.png" alt="Facebook">
+        </a>
+        <a href="#" title="LinkedIn" target="_blank">
+          <img class="social-img" src="img/social/004-linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="#" title="Instagram" target="_blank">
+          <img class="social-img" src="img/social/005-instagram.png" alt="Instagram">
+        </a>
+        <a href="#" title="Twitter" target="_blank">
+          <img class="social-img" src="img/social/007-twitter.png" alt="Twitter">
+        </a>
+        <a href="#" title="Tumblr" target="_blank">
+          <img class="social-img" src="img/social/010-tumblr.png" alt="Tumblr">
+        </a>
+      </div>
+      <div class="copyright">© Very First Page 2023</div>
+    </footer>
+  </body>
+</html>
