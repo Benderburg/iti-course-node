@@ -41,6 +41,11 @@ app.get('/shop', (req, res) => {
       username: req.query.service === undefined ? 'Не выбрана' : req.query.username
   });
 });
+app.get('/contacts', (req, res) => {
+  res.render('contacts', {
+      username: req.query.service === undefined ? 'Не выбрана' : req.query.username
+  });
+});
 app.get('*', function(req, res){
   res.render('404', {});
 });
